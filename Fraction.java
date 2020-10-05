@@ -20,6 +20,17 @@ public class Fraction
     public int Numerator(){return(n);}
     public int Denominator(){return(d);}
     
+    public void Simplify(){ //simplifying with greatest common denominator
+        int gcd = 1;
+        for(int i=1; i<=n && i<=d; i++){
+            if(n%i==0 && d%i==0){
+                gcd = i;
+            }
+        }
+        n = n/gcd;
+        d = d/gcd;
+    }
+    
     public void Add(Fraction frac){ //addition
         int n2 = frac.Numerator();
         int d2 = frac.Denominator();

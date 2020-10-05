@@ -10,11 +10,15 @@ public class Main
     public static void main(String[] args){
         //defining fractions
         Fraction frac0 = new Fraction(1,2);
-        Fraction frac1 = new Fraction(2,3);
+        Fraction frac1 = new Fraction(1,4);
         
         //math
-        frac0.Add(frac1); 
-        frac1.Multiply(frac1);
+        frac0.Multiply(frac1); 
+        frac1.Add(frac1);
+        
+        //simplifying
+        frac0.Simplify();
+        frac1.Simplify();
         
         //outputs
         System.out.println(frac0.ToString());

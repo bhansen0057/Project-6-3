@@ -5,7 +5,7 @@
  * Tyler Dolph, Brian Hansen
  * 10/5/2020
  */
-public class Main
+public class FractionTester
 {
     public static void main(String[] args){
         //defining fractions

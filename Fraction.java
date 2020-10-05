@@ -28,23 +28,23 @@ public class Fraction
             }
         }
         int num = n/gcd;
-        int dem = d/gcd;
-        return(new Fraction(num,dem));
+        int den = d/gcd;
+        return(new Fraction(num,den));
     }
     
     public Fraction Add(Fraction frac){ //addition
         int n2 = frac.Numerator();
         int d2 = frac.Denominator();
         int num = (n*d2)+(n2*d);
-        int dem = (d*d2);
-        return(new Fraction(num,dem));
+        int den = (d*d2);
+        return(new Fraction(num,den));
     }
     
     public Fraction Multiply(Fraction frac){ //multiplication
         int n2 = frac.Numerator();
         int d2 = frac.Denominator();
         int num = n*n2;
-        int dem = d*d2;
-        return(new Fraction(num,dem));
+        int den = d*d2;
+        return(new Fraction(num,den));
     }
 }

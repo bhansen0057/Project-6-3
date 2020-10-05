@@ -13,15 +13,17 @@ public class FractionTester
         Fraction frac1 = new Fraction(1,4);
         
         //math
-        frac0.Multiply(frac1); 
-        frac1.Add(frac0);
+        Fraction frac2 = frac0.Multiply(frac1); 
+        frac1.Add(frac2);
         
         //simplifying
         frac0.Simplify();
         frac1.Simplify();
+        frac2.Simplify();
         
         //outputs
         System.out.println(frac0.ToString());
         System.out.println(frac1.ToString());
+        System.out.println(frac2.ToString());
     }
 }

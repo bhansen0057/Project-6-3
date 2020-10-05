@@ -14,7 +14,7 @@ public class Main
         
         //math
         frac0.Multiply(frac1); 
-        frac1.Add(frac1);
+        frac1.Add(frac0);
         
         //simplifying
         frac0.Simplify();

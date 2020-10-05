@@ -1,33 +1,15 @@
 
 /**
- * Write a description of class Main here.
+ * The class that is run to execute the program
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Tyler Dolph, Brian Hansen
+ * 10/5/2020
  */
 public class Main
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Main
-     */
-    public Main()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public static void main(String[] args){
+        Fraction fraction = new Fraction(1,2);
+        fraction.Add(1,2);
+        System.out.println(fraction.ToString());
     }
 }

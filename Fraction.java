@@ -20,12 +20,16 @@ public class Fraction
     public int Numerator(){return(n);}
     public int Denominator(){return(d);}
     
-    public void Add(int n2, int d2){ //addition
+    public void Add(Fraction frac){ //addition
+        int n2 = frac.Numerator();
+        int d2 = frac.Denominator();
         n = (n*d2)+(n2*d);
         d = (d*d2);
     }
     
-    public void Multiply(int n2, int d2){ //multiplication
+    public void Multiply(Fraction frac){ //multiplication
+        int n2 = frac.Numerator();
+        int d2 = frac.Denominator();
         n = n*n2;
         d = d*d2;
     }

@@ -8,8 +8,16 @@
 public class Main
 {
     public static void main(String[] args){
-        Fraction fraction = new Fraction(1,2);
-        fraction.Add(1,2);
-        System.out.println(fraction.ToString());
+        //defining fractions
+        Fraction frac0 = new Fraction(1,2);
+        Fraction frac1 = new Fraction(2,3);
+        
+        //math
+        frac0.Add(frac1); 
+        frac1.Multiply(frac1);
+        
+        //outputs
+        System.out.println(frac0.ToString());
+        System.out.println(frac1.ToString());
     }
 }
